@@ -4,6 +4,6 @@ Codespark is a not for profit organisation with a vision to empower future gener
 In order to contribute to this project, do the following:
 
 - Make a clone to a local repository
-- Create your fix-*, feature-* or chore-* branch
+- Create your fix-`name`, feature-`name` or chore-`name` branch
 - Make your changes
 - Send a pull request
