@@ -17,9 +17,7 @@
 |--------------------------------------------------------------------------
 |
  */
-$app->get('/', function () use ($app) {
-    return $app->welcome();
-});
+$app->get('/', ['as' => 'home', 'uses' => 'AppController@getIndex']);
 
 /*
 |--------------------------------------------------------------------------
@@ -27,9 +25,7 @@ $app->get('/', function () use ($app) {
 |--------------------------------------------------------------------------
 |
  */
-$app->get('/about/{name:[A-Za-z-]+}', function () use ($app) {
-
-});
+$app->get('/about/{name:[A-Za-z-]+}', ['as' => 'about', 'uses' => 'AboutController@getSection']);
 
 /*
 |--------------------------------------------------------------------------
@@ -37,8 +33,7 @@ $app->get('/about/{name:[A-Za-z-]+}', function () use ($app) {
 |--------------------------------------------------------------------------
 |
  */
-$app->get('/programmes/{name:[A-Za-z-]+}', function () use ($app) {
-});
+$app->get('/programmes/{name:[A-Za-z-]+}', ['as' => 'programmes', 'uses' => 'ProgrammesController@getSection']);
 
 /*
 |--------------------------------------------------------------------------
@@ -46,9 +41,7 @@ $app->get('/programmes/{name:[A-Za-z-]+}', function () use ($app) {
 |--------------------------------------------------------------------------
 |
  */
-$app->get('/events/{name:[A-Za-z-]+}', function () use ($app) {
-    //
-});
+$app->get('/events/{name:[A-Za-z-]+}', ['as' => 'events', 'uses' => 'EventsController@getSection']);
 
 /*
 |--------------------------------------------------------------------------
@@ -56,9 +49,7 @@ $app->get('/events/{name:[A-Za-z-]+}', function () use ($app) {
 |--------------------------------------------------------------------------
 |
  */
-$app->get('/news/{name:[A-Za-z-]+}', function () use ($app) {
-    //
-});
+$app->get('/news/{name:[A-Za-z-]+}', ['as' => 'news', 'uses' => 'NewsController@getSection']);
 
 /*
 |--------------------------------------------------------------------------
@@ -66,12 +57,7 @@ $app->get('/news/{name:[A-Za-z-]+}', function () use ($app) {
 |--------------------------------------------------------------------------
 |
  */
-$app->get('/recognition/', function () use ($app) {
-    //
-});
-$app->get('/annual-report/', function () use ($app) {
-    //
-});
+$app->get('/more/name:[A-Za-z-]+}/', ['as' => 'more', 'uses' => 'AppController@getMore']);
 
 /*
 |--------------------------------------------------------------------------
@@ -79,6 +65,4 @@ $app->get('/annual-report/', function () use ($app) {
 |--------------------------------------------------------------------------
 |
  */
-$app->get('/get-involved/{name:[A-Za-z-]+}', function () use ($app) {
-    //
-});
+$app->get('/get-involved/{name:[A-Za-z-]+}', ['as' => 'more', 'uses' => 'AppController@getInvolved']);
