@@ -7,7 +7,7 @@
 </head>
 <body>
     <!--Master Template Goes here-->
-    @yield('section')
+    @yield('content')
 
     <!--Scripts here-->
 </body>
