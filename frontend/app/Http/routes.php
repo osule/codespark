@@ -66,6 +66,6 @@ $app->group(['namespace' => 'App\Http\Controllers\CodeSpark'], function ($app) {
     |--------------------------------------------------------------------------
     |
      */
-    $app->get('/get-involved/{name:[A-Za-z-]+}', ['as' => 'more', 'uses' => 'AppController@getInvolved']);
+    $app->get('/get-involved/{name:[A-Za-z-]+}', ['as' => 'get-involved', 'uses' => 'AppController@getInvolved']);
 
 });

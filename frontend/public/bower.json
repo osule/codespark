@@ -1,0 +1,25 @@
+{
+  "name": "Codespark",
+  "version": "0.0.1",
+  "homepage": "https://github.com/RainbowSeven/codespark",
+  "authors": [
+    "Oluwafemi Sule <oluwafemi.sule@andela.com>"
+  ],
+  "description": "CodesparkNG lumen front",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "twbs/bootstrap#~3.3.6",
+    "font-awesome": "fontawesome#~4.5.0",
+    "jquery": "1.9.1 - 2"
+  }
+}
