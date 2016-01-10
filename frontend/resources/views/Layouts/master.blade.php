@@ -18,7 +18,7 @@
       @include('Layouts.navigation')
     </div>
     <div class="row">
-      @yield('section')
+      @yield('content')
     </div>
 
   </div>
