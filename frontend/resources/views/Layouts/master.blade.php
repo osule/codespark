@@ -12,23 +12,8 @@
 <!--Stylesheets end here-->
 </head>
 <body>
-<!--Master Template Goes here-->
-  <div class="container">
-    <div class="row">
-      @include('Layouts.navigation')
-    </div>
-    <div class="row">
-      @yield('section')
-    </div>
-
-  </div>
-
-
-<!--Scripts start here-->
-  <script type="text/javascript" src="{{ $app['url']->asset('bower_components/jquery/dist/jquery.min.js') }}"></script>
-  <script type="text/javascript" src="{{ $app['url']->asset('bower_components/bootstrap/dist/css/bootstrap.min.js') }}"></script>
-  <script type="text/javascript" src="{{ $app['url']->asset('js/codespark.js') }}"></script>
-<!--Scripts end here-->
+    <!--Master Template Goes here-->
+    @yield('content')
 
 </body>
 </html>

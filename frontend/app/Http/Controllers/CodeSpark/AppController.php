@@ -31,7 +31,7 @@ class AppController extends Controller
      *
      * @return Response
      */
-    public function getInvolved()
+    public function getInvolved($name)
     {
         return view('app.getinvolved');
     }
