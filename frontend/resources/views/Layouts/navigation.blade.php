@@ -1,16 +1,22 @@
 <nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container-fluid">
+  <div class="col-sm-12">
     <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="true" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
       <a class="navbar-brand" href="#">
-        <img alt="Brand" src="...">
+        <img alt="Brand" src="{{ $app['url']->asset('img/50x50.png') }}">
       </a>
     </div>
 
-    <div class="collapse navbar-collapse">
+    <div id="navbar" class="collapse navbar-collapse" >
       <ul class="nav navbar-nav">
         <li>
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-          Home page</a>
+          Home</a>
         </li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
@@ -73,7 +79,18 @@
           </ul>
         </li>
       </ul>
+
+      <form class="navbar-form navbar-right">
+        <div class="form-group">
+          <button class="btn btn-primary" href="">Donate</button>
+        </div>
+        <div>
+          <a href="">Login</a> | <a href="">Register</a>
+        </div>
+      </form>
     </div>
 
   </div>
 </nav>
+
+@include('Layouts.breadcrumbs')

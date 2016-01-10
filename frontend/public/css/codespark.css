@@ -1,0 +1,14 @@
+body { padding-top: 70px; }
+
+.slick-next:before,
+.slick-prev:before {
+  color: #380404;
+}
+
+.home-point {
+  padding-bottom: 15px;
+}
+
+.breadcrumb {
+  background: none;
+}

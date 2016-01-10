@@ -20,6 +20,7 @@
   "dependencies": {
     "bootstrap": "twbs/bootstrap#~3.3.6",
     "font-awesome": "fontawesome#~4.5.0",
-    "jquery": "1.9.1 - 2"
+    "jquery": "1.9.1 - 2",
+    "slick-carousel": "~1.5.9"
   }
 }
