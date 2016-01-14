@@ -14,5 +14,6 @@
 <div class="row">
   @include('app.carousel')
 </div>
+@include('app.briefs')
 
 @stop
